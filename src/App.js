@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import ThemeToggler from "./components/ThemeToggler";
+import "./styles/main.scss"
+// import 'rsuite/dist/styles/rsuite-default.css';
+import Header from "./components/Header";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import SocialMenu from "./components/SocialMenu";
+import Work from "./pages/Work";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${theme==="dark" ? "dark-mode" : ""}`}>
+      <Router>
+        <Header />
+        <Switch>
+          <Router exact path="/">
+            <Work/>
+          </Router>
+        </Switch>
+        {/* <ThemeToggler toggleTheme={() => toggleTheme()}/> */}
+      <SocialMenu/>
+      </Router>
     </div>
   );
 }
