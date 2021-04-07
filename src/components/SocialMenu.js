@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SocialMenu = () => {
+import GithubIcon from './GithubIcon'
+import LinkedInIcon from './LinkedInIcon'
+import ResumeIcon from './ResumeIcon'
+const SocialMenu = ({ theme }) => {
   return (
     <footer>
       <ul>
-        <li><Link>LinkedIn</Link></li>
-        <li><Link>Github</Link></li>
-        <li><Link>Resume</Link></li>
+        <li><Link><LinkedInIcon /></Link></li>
+        <li><Link><GithubIcon /></Link></li>
+        <li><Link><ResumeIcon/></Link></li>
       </ul>
     </footer>
   )

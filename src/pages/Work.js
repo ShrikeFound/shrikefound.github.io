@@ -48,8 +48,8 @@ const Work = () => {
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
             icon={cupcakeIcon} 
-            title="Iris Data Visualization"
-            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
+            title="Cupcake | Birthday Tracker"
+            description="<p>A birthday tracker so I can remember birthdays. Uses Google for authentication, firebase for storage and hosting. Presented using React.js</p>"
             codeURL=""
             siteURL=""
           />
@@ -59,8 +59,9 @@ const Work = () => {
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
             icon={firesideIcon} 
-            title="Iris Data Visualization"
-            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
+            title="Fireside | Chat App"
+            description="<p>A fullstack chatroom app. Users can sign in, create chat rooms, and chat in real time with others.</p>
+              <p>I took advantage of Firebase for its storage,hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
             codeURL=""
             siteURL=""
           />
@@ -70,8 +71,8 @@ const Work = () => {
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
             icon={hiveIcon} 
-            title="Iris Data Visualization"
-            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
+            title="NYT Bee Solver"
+            description="<p>A puzzle solver for the NYT Spelling Bee Game. Acceptable word list fetched using AJAX, solved and presented using React.js</p>"
             codeURL=""
             siteURL=""
           />
@@ -81,11 +82,14 @@ const Work = () => {
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
-            icon={shieldIcon} 
-            title="Iris Data Visualization"
-            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
+            icon={shieldIcon}
+            title="Gwendolyn | Character Tracker"
+            description="<p>Gwendolyn is a platform built to help Players create, update, and share their character sheets either publically or to members of their own gaming group. It features an inventory tracking system for easily keeping track of your progress.</p>
+
+<p>Frontend built using HTML, CSS, and Javascript. Backend built using Ruby on Rails and hosted using Heroku & AWS.</p>"
             codeURL=""
             siteURL=""
+            bottom={true}
           />
         </div>
       

@@ -21,6 +21,7 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
+  transition: backgroundcolor $transition-length ease;
 }
 
 .App {
@@ -127,6 +128,7 @@ header {
 
 footer {
   position: fixed;
+  // border: 4px solid orange;
   bottom: 1rem;
   width: 90%;
   // max-width: 1300px;
@@ -139,8 +141,10 @@ footer {
     list-style: none;
     text-align: right;
     font-weight: 700;
+    display: flex;
+    align-items: center;
     li + li {
-      margin-left: 4rem;
+      margin-left: 1rem;
       margin-top: 0.1rem;
     }
   }
@@ -324,13 +328,17 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  transform-origin: bottom;
-  transform: scale(0, 0);
-  transition: transform $transition-length ease-in;
+  transform-origin: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1ms ease-in $transition-length,
+    opacity $transition-length ease-in;
   z-index: 100;
   background-color: $bg-color;
   &.show {
-    transform: scale(1, 1);
+    transform: translateY(0);
+    transition: transform $transition-length ease-in;
+    opacity: 1;
   }
 }
 .portfolio-a,
@@ -392,6 +400,43 @@ footer {
   }
 }
 
+.media-icon {
+  width: 18px;
+  height: 18px;
+
+  & .main-fill {
+    fill: $font-color;
+  }
+  & .secondary-fill {
+    fill: $bg-color;
+  }
+}
+
+.has-tooltip {
+  position: relative;
+}
+
+.tooltip {
+  top: -2.3rem;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: $font-color;
+  left: 0;
+  margin-left: -50%;
+  width: 200%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity $transition-length ease-in-out;
+}
+.tooltip.tooltip-bottom {
+  top: initial;
+  bottom: -2.3rem;
+}
+
+.has-tooltip:hover > .tooltip {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 700px) {
   .portfolio-modal {
     display: grid;
@@ -451,12 +496,49 @@ footer {
       bottom: -9px;
     }
   }
+
+  footer {
+    ul {
+      li + li {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .media-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 //dark mode
 .App.dark-mode {
   color: $font-color--dark;
   background-color: $bg-color--dark;
+
+  .portfolio-modal {
+    background-color: $bg-color--dark;
+  }
+
+  .close-button {
+    &::before,
+    &::after {
+      background-color: $font-color--dark;
+    }
+  }
+
+  .media-icon {
+    & .main-fill {
+      fill: $font-color--dark;
+    }
+    & .secondary-fill {
+      fill: $bg-color--dark;
+    }
+  }
+
+  .tooltip {
+    color: $font-color--dark;
+  }
 }
 
 /*topToBottom Animation*/
@@ -486,4 +568,14 @@ footer {
   100% {
     opacity: 0;
   }
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.block {
+  display: block;
+}
+.w-max {
+  width: max-content;
 }

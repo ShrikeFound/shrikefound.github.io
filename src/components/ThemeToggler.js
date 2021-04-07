@@ -1,12 +1,13 @@
 import React from 'react'
-import { Button } from 'rsuite'
 import "../styles/main.scss"
+import MoonIcon from './MoonIcon'
+import SunIcon from './SunIcon'
 
-const ThemeToggler = ({ toggleTheme }) => {
-
+const ThemeToggler = ({ theme, toggleTheme }) => {
+  console.log(theme);
   return (
     <div>
-      <Button onClick={toggleTheme}>hello</Button>
+      <button style={{ display: "grid", placeItems: "center", border: "none", backgroundColor: "inherit" }} onClick={toggleTheme}>{theme === "light" ? <MoonIcon /> : <SunIcon />}</button>
     </div>
   )
 }
