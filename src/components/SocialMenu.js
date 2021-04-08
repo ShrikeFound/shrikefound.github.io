@@ -10,7 +10,7 @@ const SocialMenu = ({ theme }) => {
       <ul>
         <li><Link><LinkedInIcon /></Link></li>
         <li><Link><GithubIcon /></Link></li>
-        <li><Link><ResumeIcon/></Link></li>
+        {/* <li><Link><ResumeIcon/></Link></li> */}
       </ul>
     </footer>
   )

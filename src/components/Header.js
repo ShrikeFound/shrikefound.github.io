@@ -9,10 +9,10 @@ const Header = ({ theme,toggleTheme }) => {
       <p className="logo">Alfonso Martinez</p>
       <nav>
         <ul>
-          <li><Link>Work</Link></li>
-          <li><Link>About</Link></li>
-          <li><Link>Contact</Link></li>
-          <li><ThemeToggler theme={theme} toggleTheme={() => toggleTheme()}/></li>
+          <li><Link to="/">Work</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link>Resume</Link></li>
+          {/* <li><ThemeToggler theme={theme} toggleTheme={() => toggleTheme()}/></li> */}
         </ul>
       </nav>
     </header>

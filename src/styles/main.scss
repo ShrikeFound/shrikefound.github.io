@@ -232,9 +232,40 @@ footer {
   min-height: 100vh;
 }
 
-.work-page {
+.work-page,
+.about-page {
   display: grid;
   justify-items: center;
+}
+
+.about-page {
+  grid-template-rows: 40% auto auto;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.skills-section {
+  font-size: 18px;
+  margin-top: 4rem;
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  & div {
+    & h3 {
+      font-weight: 400;
+    }
+    & p {
+      word-break: break-word;
+      max-width: 100%;
+      font-weight: 300;
+    }
+  }
 }
 
 .title-container {
@@ -435,6 +466,15 @@ footer {
 
 .has-tooltip:hover > .tooltip {
   opacity: 1;
+}
+
+.about-section {
+  width: 90%;
+  max-width: 70ch;
+  .subtitle {
+    text-align: left;
+    margin-left: initial;
+  }
 }
 
 @media only screen and (min-width: 700px) {
