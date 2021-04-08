@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const PortfolioItem = ({ show,close,image,title,description,codeURL,siteURL }) => {
 
@@ -14,8 +14,8 @@ const PortfolioItem = ({ show,close,image,title,description,codeURL,siteURL }) =
         <div dangerouslySetInnerHTML={{__html: description}}>
             
         </div>
-          <Link className="mt-1 block w-max" to={codeURL}>View Source Code</Link>
-          <Link className="mt-1 block w-max" to={siteURL}>View Live Site</Link>
+          <a className="mt-1 block w-max" href={codeURL} target="_blank" rel="noopener noreferrer">View Source Code</a>
+          <a className="mt-1 block w-max" href={siteURL} target="_blank" rel="noopener noreferrer">View Live Site</a>
         </div>
       </div>
       <button className="close-button" onClick={close}></button>

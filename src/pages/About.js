@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="container full-height about-page">
        <div className="title-container">
-        <h1 className="title">Alfonso Martinez</h1>
+        <h1 className="title">About Me</h1>
          
       </div>
       <div className="about-section">

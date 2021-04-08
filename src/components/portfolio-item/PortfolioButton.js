@@ -15,7 +15,7 @@ const PortfolioButton = ({ icon,title,description,codeURL,siteURL,bottom }) => {
     <>
       <button onClick={open} className="portfolio-frame has-tooltip">
         <span className={`tooltip ${bottom ? "tooltip-bottom" : ""}`}>{title}</span>
-      <img className="img" src={icon} />
+        <img className="img" alt={title} src={icon} />
       </button>
       <PortfolioItem show={isOpen} title={title} description={description} codeURL={codeURL} siteURL={siteURL} image={icon} close={() => close()}/>
     </>

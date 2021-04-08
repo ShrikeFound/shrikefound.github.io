@@ -33,27 +33,9 @@ const Work = () => {
           <img className="img" src={irisIcon} />
         </button> */}
 
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={irisIcon} 
-            title="Iris Data Visualization"
-            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
-            codeURL=""
-            siteURL=""
-          />
-        </div>
+        
       
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={cupcakeIcon} 
-            title="Cupcake | Birthday Tracker"
-            description="<p>A birthday tracker so I can remember birthdays. Uses Google for authentication, firebase for storage and hosting. Presented using React.js</p>"
-            codeURL=""
-            siteURL=""
-          />
-        </div>
+        
 
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
@@ -62,22 +44,10 @@ const Work = () => {
             title="Fireside | Chat App"
             description="<p>A fullstack chatroom app. Users can sign in, create chat rooms, and chat in real time with others.</p>
               <p>I took advantage of Firebase for its storage,hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
-            codeURL=""
-            siteURL=""
+            codeURL="https://github.com/ShrikeFound/react-chat"
+            siteURL="https://firesidereactchat.com/signin"
           />
         </div>
-
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={hiveIcon} 
-            title="NYT Bee Solver"
-            description="<p>A puzzle solver for the NYT Spelling Bee Game. Acceptable word list fetched using AJAX, solved and presented using React.js</p>"
-            codeURL=""
-            siteURL=""
-          />
-        </div>
-
 
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
@@ -87,29 +57,54 @@ const Work = () => {
             description="<p>Gwendolyn is a platform built to help Players create, update, and share their character sheets either publically or to members of their own gaming group. It features an inventory tracking system for easily keeping track of your progress.</p>
 
 <p>Frontend built using HTML, CSS, and Javascript. Backend built using Ruby on Rails and hosted using Heroku & AWS.</p>"
-            codeURL=""
-            siteURL=""
+            codeURL="https://github.com/ShrikeFound/mouse-sheet"
+            siteURL="https://www.gwendolyn.app/"
+            
+          />
+        </div>
+
+        
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={irisIcon} 
+            title="Iris Data Visualization"
+            description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
+            codeURL="https://github.com/ShrikeFound/iris-viz"
+            siteURL="https://alfonsomartinez.dev/iris-viz/"
+          />
+        </div>
+
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={cupcakeIcon} 
+            title="Cupcake | Birthday Tracker"
+            description="<p>A birthday tracker to help you remember birthdays. Uses Google for authentication, firebase for storage and hosting. Presented using React.js</p>"
+            codeURL="https://github.com/ShrikeFound/birthday-reminder"
+            siteURL="https://birthday-reminder-2b6cb.web.app/"
+          />
+        </div>
+        
+
+
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={hiveIcon} 
+            title="NYT Bee Solver"
+            description="<p>A puzzle solver for the NYT Spelling Bee Game. Acceptable word list fetched using AJAX, solved and presented using React.js</p>"
+            codeURL="https://github.com/ShrikeFound/bee-solver"
+            siteURL="https://nytbee.xyz/"
             bottom={true}
           />
         </div>
+
+
+        
       
       
       
-        {/* <div className="portfolio-frame">
-          <img className="img" src={cupcakeIcon} />
-        </div>
-
-        <div className="portfolio-frame">
-          <img className="img" src={firesideIcon} />
-        </div>
-
-        <div className="portfolio-frame">
-          <img className="img" src={hiveIcon} />
-        </div>
-
-        <div className="portfolio-frame">
-          <img className="img" src={shieldIcon} />
-        </div> */}
 
       </div>
       
