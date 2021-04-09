@@ -20,10 +20,11 @@ const Work = () => {
           , and <strong className="rotating-word">
             <span>Javascript.</span>
             <span>React.</span>
+            <span>Firebase.</span>
             <span>Node.js.</span>
             <span>Ruby.</span>
             <span>PostGreSQL.</span>
-            <span>Ruby.</span>
+            <span>Sass.</span>
           </strong>
         </p>
       </div>

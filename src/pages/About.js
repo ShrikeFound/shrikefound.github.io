@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 const About = () => {
+  const emailRef = useRef();
+  const copyRef = useRef();
+  console.log("email: ",emailRef.current,"  coppy", copyRef.current)
+  
+  const copyElementValue = (e) => {
+    e.preventDefault()
+    console.log(emailRef.current)
+  const email = emailRef.current.getAttribute("data-value")
+  console.log(email)
+  console.log("copying!");
+  navigator.clipboard.writeText(email)
+  copyRef.current.classList.remove("hidden");
+  setTimeout(() => {
+    copyRef.current.classList.add("hidden");
+
+  },5000)
+}
+
   return (
     <div className="container full-height about-page">
        <div className="title-container">
@@ -17,7 +35,7 @@ const About = () => {
         <p>I’m currently available for full-time or freelance work. Reach out whenever you’d like!</p>
 
         <p>- Alfonso</p>
-        <a href="mail_to:alphaandsew@gmail.com">alphaandsew@gmail.com</a>
+        <button className="email-button" data-value="alphaandsew@gmail.com" onClick={(e) => copyElementValue(e)} ref={emailRef}  id="copyElement">alphaandsew@gmail.com<span ref={copyRef} className="copy-message hidden" id="copyMessage">email copied!</span></button>
 
         <div className="skills-section">
         <div>
@@ -27,12 +45,12 @@ const About = () => {
 
         <div>
           <h3>Back-End Skills</h3>
-          <p>Ruby,Rails,Node.js,PostgreSQWL,Firebase,AWS,PHP</p>
+          <p>Ruby, Rails, Node.js, PostgreSQWL, Firebase, AWS, PHP</p>
         </div>
 
         <div>
           <h3>Tools</h3>
-          <p>VS Code, Git, Github, npm, D3.js, Plotly.js, Webpack</p>
+          <p>D3.js, VS Code, Git, Github, npm, Plotly.js, Webpack</p>
         </div>
       </div>
 

@@ -331,7 +331,7 @@ footer {
     position: absolute;
     bottom: -7px;
     left: 0px;
-    animation: topToBottom 18s linear infinite 0s;
+    animation: topToBottom 21s linear infinite 0s;
     opacity: 0;
   }
 }
@@ -354,6 +354,11 @@ footer {
 
 .rotating-word span:nth-child(6) {
   animation-delay: 15s;
+  // color: orange;
+}
+
+.rotating-word span:nth-child(7) {
+  animation-delay: 18s;
   // color: orange;
 }
 
@@ -393,10 +398,6 @@ footer {
 .project-text {
   width: 90%;
   max-width: 60ch;
-
-  & a {
-    font-weight: 300;
-  }
 }
 
 .project-buttons {
@@ -591,6 +592,73 @@ footer {
   }
 }
 
+.email-button,
+.project-link {
+  font-weight: 300;
+  background-color: inherit;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    transition: all ease-in-out $transition-length;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 40%;
+    left: 0;
+    width: 115%;
+    background: initial;
+    background: rgb(202, 238, 229);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(202, 238, 229, 1) 0%,
+      rgba(202, 238, 229, 0.5) 71%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(202, 238, 229, 1) 0%,
+      rgba(202, 238, 229, 0.5) 71%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(202, 238, 229, 1) 0%,
+      rgba(202, 238, 229, 0.5) 71%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    &::before {
+      height: 90%;
+    }
+  }
+}
+
+.email-button .copy-message {
+  position: absolute;
+  bottom: -1.3rem;
+  right: 0;
+  transition: all ease-in-out $transition-length;
+  opacity: 1;
+}
+
+.copy-message.hidden {
+  opacity: 0;
+}
+
 /*topToBottom Animation*/
 @keyframes topToBottom {
   0% {
@@ -604,11 +672,11 @@ footer {
     opacity: 1;
     transform: translateY(0px);
   }
-  20% {
+  18% {
     opacity: 1;
     transform: translateY(0px);
   }
-  25% {
+  24% {
     opacity: 0;
     transform: translateY(30px);
   }

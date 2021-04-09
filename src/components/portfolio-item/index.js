@@ -14,8 +14,8 @@ const PortfolioItem = ({ show,close,image,title,description,codeURL,siteURL }) =
         <div dangerouslySetInnerHTML={{__html: description}}>
             
         </div>
-          <a className="mt-1 block w-max" href={codeURL} target="_blank" rel="noopener noreferrer">View Source Code</a>
-          <a className="mt-1 block w-max" href={siteURL} target="_blank" rel="noopener noreferrer">View Live Site</a>
+          <a className="mt-1 block w-max project-link" href={codeURL} target="_blank" rel="noopener noreferrer">View Source Code</a>
+          <a className="mt-1 block w-max project-link" href={siteURL} target="_blank" rel="noopener noreferrer">View Live Site</a>
         </div>
       </div>
       <button className="close-button" onClick={close}></button>
