@@ -44,7 +44,7 @@ const Work = () => {
             icon={firesideIcon} 
             title="Fireside | Chat App"
             description="<p>A fullstack chatroom app. Users can sign in, create chat rooms, and chat in real time with others.</p>
-              <p>I took advantage of Firebase for its storage,hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
+              <p>I took advantage of Firebase for its storage, hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
             codeURL="https://github.com/ShrikeFound/react-chat"
             siteURL="https://firesidereactchat.com/signin"
           />
@@ -68,7 +68,8 @@ const Work = () => {
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
-            icon={irisIcon} 
+            icon={irisIcon}
+            small={true}
             title="Iris Data Visualization"
             description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
             codeURL="https://github.com/ShrikeFound/iris-viz"
@@ -79,9 +80,10 @@ const Work = () => {
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
-            icon={cupcakeIcon} 
+            icon={cupcakeIcon}
+            small={true}
             title="Cupcake | Birthday Tracker"
-            description="<p>A birthday tracker to help you remember birthdays. Uses Google for authentication, firebase for storage and hosting. Presented using React.js</p>"
+            description="<p>A birthday tracker to help you remember birthdays. Uses Google authentication, firebase for storage and hosting. Front end built using React.js</p>"
             codeURL="https://github.com/ShrikeFound/birthday-reminder"
             siteURL="https://birthday-reminder-2b6cb.web.app/"
           />
@@ -94,7 +96,7 @@ const Work = () => {
           <PortfolioButton
             icon={hiveIcon} 
             title="NYT Bee Solver"
-            description="<p>A puzzle solver for the NYT Spelling Bee Game. Acceptable word list fetched using AJAX, solved and presented using React.js</p>"
+            description="<p>A puzzle solver for the NYT Spelling Bee Game. Acceptable word list fetched using AJAX. Puzzle solved using Javascript and presented using React.js</p>"
             codeURL="https://github.com/ShrikeFound/bee-solver"
             siteURL="https://nytbee.xyz/"
             bottom={true}

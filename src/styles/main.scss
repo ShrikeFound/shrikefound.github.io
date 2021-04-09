@@ -384,15 +384,22 @@ footer {
 }
 .portfolio-a,
 .portfolio-b {
-  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 40%;
+}
+.portfolio-a {
+  height: 40%;
+  background-size: 50%;
 }
 .portfolio-b {
   display: grid;
   // align-items: flex-start;
   justify-items: center;
+  padding-bottom: 2rem;
+}
+
+.portfolio-a.small {
+  background-size: 30%;
 }
 
 .project-text {
@@ -496,6 +503,10 @@ footer {
   .portfolio-a,
   .portfolio-b {
     height: 100%;
+    background-size: 50%;
+  }
+  .portfolio-a.small {
+    background-size: 40%;
   }
   .portfolio-a {
     background-position: 80% 50%;

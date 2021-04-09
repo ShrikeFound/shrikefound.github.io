@@ -1,12 +1,12 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 
-const PortfolioItem = ({ show,close,image,title,description,codeURL,siteURL }) => {
+const PortfolioItem = ({ show,close,image,title,description,codeURL,siteURL,small }) => {
 
   return (
     <div className={`portfolio-modal ${show ? "show" : ""}`}>
       
-      <div className="portfolio-a" style={{ backgroundImage: `url(${image})`}}>
+      <div className={`portfolio-a ${small ===true ? "small" : ""}`}  style={{ backgroundImage: `url(${image})`}}>
       </div>
       <div className="portfolio-b">
         <div className="project-text">
