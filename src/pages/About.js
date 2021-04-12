@@ -50,7 +50,7 @@ const About = () => {
 
         <div>
           <h3>Tools</h3>
-          <p>D3.js, VS Code, Git, Github, npm, Plotly.js, Webpack</p>
+          <p>Figma,Adobe Illustrator, D3.js, VS Code, Git, Github, npm, Plotly.js, Webpack</p>
         </div>
       </div>
 

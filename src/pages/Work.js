@@ -5,6 +5,8 @@ import cupcakeIcon from '../images/cupcake_icon.svg'
 import firesideIcon from '../images/fireside_icon.svg'
 import hiveIcon from '../images/hive_icon.svg'
 import shieldIcon from '../images/shield_icon.svg'
+import puzzleIcon from '../images/puzzle_icon_2.svg'
+import LuciusIcon from '../images/lucius_icon.png'
 import PortfolioButton from '../components/portfolio-item/PortfolioButton'
 
 const Work = () => {
@@ -34,7 +36,17 @@ const Work = () => {
           <img className="img" src={irisIcon} />
         </button> */}
 
-        
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={puzzleIcon} 
+            title="Independent Therapist Site"
+            description="<p>A website designed and developed for an independent therapist.</p>
+              <p>A static site designed in Figma in collaboration with the client, built using React and hosted using Netlify.</p>"
+            codeURL="https://github.com/ShrikeFound/react-therapist-site"
+            siteURL="https://firesidereactchat.com/signin"
+          />
+        </div>
       
         
 
@@ -103,6 +115,29 @@ const Work = () => {
           />
         </div>
 
+        
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={LuciusIcon} 
+            title="Lucius | Discord Deck Tracker"
+            description="<p>
+              A web app that keeps track of character skills for use with the Through the Breach RPG. The Bot simulates multiple decks of cards during play and can link with characters
+              created through the front end to use their skills.
+            </p>  
+            <p>
+              Bot and Frontend built using Javascript, utilizing Firebase for both authorization and as the backend. 
+              the landing page front end was created using React and Bootstrap. It's hosted using Github Pages.
+            </p>
+            <br/>
+            <p>Lucius was drawn by Artist <a href='https://www.instagram.com/p/CNlCcsXjKcY/' target='_blank'>Jonathan Pulido</a></p>
+
+            "
+            codeURL="https://github.com/ShrikeFound/lucius-bot"
+            siteURL="https://luciusbot.com"
+            bottom={true}
+          />
+        </div>
 
         
       
