@@ -98,6 +98,7 @@ const Work = () => {
             description="<p>A birthday tracker to help you remember birthdays. Uses Google authentication, firebase for storage and hosting. Front end built using React.js</p>"
             codeURL="https://github.com/ShrikeFound/birthday-reminder"
             siteURL="https://birthday-reminder-2b6cb.web.app/"
+            bottom={true}
           />
         </div>
         
