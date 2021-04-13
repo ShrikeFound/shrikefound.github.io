@@ -44,7 +44,7 @@ const Work = () => {
             description="<p>A website designed and developed for an independent therapist.</p>
               <p>A static site designed in Figma in collaboration with the client, built using React and hosted using Netlify.</p>"
             codeURL="https://github.com/ShrikeFound/react-therapist-site"
-            siteURL="https://firesidereactchat.com/signin"
+            siteURL="https://marthawebblcsw.com"
           />
         </div>
       
