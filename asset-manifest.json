@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.13588b3a.chunk.css",
-    "main.js": "/static/js/main.04f1b1b7.chunk.js",
-    "main.js.map": "/static/js/main.04f1b1b7.chunk.js.map",
+    "main.js": "/static/js/main.8ec759cc.chunk.js",
+    "main.js.map": "/static/js/main.8ec759cc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a8408590.js",
     "runtime-main.js.map": "/static/js/runtime-main.a8408590.js.map",
     "static/js/2.47cf6b8f.chunk.js": "/static/js/2.47cf6b8f.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/hive_icon.f152c876.svg": "/static/media/hive_icon.f152c876.svg",
     "static/media/iris_icon.c1fba048.svg": "/static/media/iris_icon.c1fba048.svg",
     "static/media/lucius_icon.85bd23a0.png": "/static/media/lucius_icon.85bd23a0.png",
+    "static/media/plot_icon.7d44e4fe.svg": "/static/media/plot_icon.7d44e4fe.svg",
     "static/media/puzzle_icon_2.999c00b4.svg": "/static/media/puzzle_icon_2.999c00b4.svg",
     "static/media/shield_icon.99f65044.svg": "/static/media/shield_icon.99f65044.svg"
   },
@@ -22,6 +23,6 @@
     "static/js/runtime-main.a8408590.js",
     "static/js/2.47cf6b8f.chunk.js",
     "static/css/main.13588b3a.chunk.css",
-    "static/js/main.04f1b1b7.chunk.js"
+    "static/js/main.8ec759cc.chunk.js"
   ]
 }
