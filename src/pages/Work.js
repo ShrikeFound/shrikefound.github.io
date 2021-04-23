@@ -43,9 +43,9 @@ const Work = () => {
             icon={plotIcon} 
             title="Country Population Visualization"
             description="<p>An interactive visualization of United Nations country data used to explore the relationship between fertility rates, life expectancy, and population growth throughout the years.</p>
-              <p>Data is fetched using D3.js and presented using React.js</p>"
+              <p>Data is fetched using D3.js, presented using React.js, hosted using Netlify.</p>"
             codeURL="https://github.com/ShrikeFound/react-population-viz"
-            siteURL="https://github.com/ShrikeFound/react-population-viz"
+            siteURL="https://alfonsomartinez.dev/react-population-viz/"
           />
         </div>
 
