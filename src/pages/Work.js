@@ -8,6 +8,7 @@ import shieldIcon from '../images/shield_icon.svg'
 import puzzleIcon from '../images/puzzle_icon_2.svg'
 import LuciusIcon from '../images/lucius_icon.png'
 import PortfolioButton from '../components/portfolio-item/PortfolioButton'
+import plotIcon from '../images/plot_icon.svg'
 
 const Work = () => {
   return (
@@ -35,6 +36,18 @@ const Work = () => {
         {/* <button className="portfolio-frame">
           <img className="img" src={irisIcon} />
         </button> */}
+
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={plotIcon} 
+            title="Country Population Visualization"
+            description="<p>An interactive visualization of United Nations country data used to explore the relationship between fertility rates, life expectancy, and population growth throughout the years.</p>
+              <p>Data is fetched using D3.js and presented using React.js</p>"
+            codeURL="https://github.com/ShrikeFound/react-population-viz"
+            siteURL="https://github.com/ShrikeFound/react-population-viz"
+          />
+        </div>
 
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
@@ -86,6 +99,7 @@ const Work = () => {
             description="<p>An interactive visualization of the Iris Data Set fetched using D3.js and presented using React.js</p>"
             codeURL="https://github.com/ShrikeFound/iris-viz"
             siteURL="https://alfonsomartinez.dev/iris-viz/"
+            bottom={true}
           />
         </div>
 
