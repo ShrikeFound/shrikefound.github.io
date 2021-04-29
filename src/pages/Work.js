@@ -40,6 +40,21 @@ const Work = () => {
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
           <PortfolioButton
+            icon={puzzleIcon} 
+            title="Independent Therapist Site"
+            description="<p>A website designed and developed as a freelance project for an independent therapist.</p>
+              <p>Static site designed in Figma in collaboration with the client, built using html, css, and vanilla JS.
+              <p>Originally built using React (source source below)</p>"
+            codeURL="https://github.com/ShrikeFound/react-therapist-site"
+            siteURL="https://marthawebblcsw.com"
+          />
+        </div>
+      
+
+
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
             icon={plotIcon} 
             title="Country Population Visualization"
             description="<p>An interactive visualization of United Nations country data used to explore the relationship between fertility rates, life expectancy, and population growth throughout the years.</p>
@@ -49,18 +64,7 @@ const Work = () => {
           />
         </div>
 
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={puzzleIcon} 
-            title="Independent Therapist Site"
-            description="<p>A website designed and developed for an independent therapist.</p>
-              <p>A static site designed in Figma in collaboration with the client, built using React and hosted using Netlify.</p>"
-            codeURL="https://github.com/ShrikeFound/react-therapist-site"
-            siteURL="https://marthawebblcsw.com"
-          />
-        </div>
-      
+        
         
 
         <div>
