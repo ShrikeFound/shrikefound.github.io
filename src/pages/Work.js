@@ -93,7 +93,7 @@ const Work = () => {
               <p>Cupcake lets you store your love one's birthdays. Once you log in, it will ask for permission to notify your device. If it has permission, it'll notify you 2 weeks before each birthday, then the day before.</p>
             "
             codeURL="https://github.com/ShrikeFound/birthday-reminder"
-            siteURL="https://birthday-reminder-2b6cb.web.app/"
+            siteURL="https://cupcakebirthdays.app"
           />
         </div>
 
