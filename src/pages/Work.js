@@ -67,17 +67,7 @@ const Work = () => {
         
         
 
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={firesideIcon} 
-            title="Fireside | Chat App"
-            description="<p>A fullstack chatroom app. Users can sign in, create chat rooms, and chat in real time with others.</p>
-              <p>I took advantage of Firebase for its storage, hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
-            codeURL="https://github.com/ShrikeFound/react-chat"
-            siteURL="https://firesidereactchat.com/signin"
-          />
-        </div>
+        
 
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
@@ -93,6 +83,34 @@ const Work = () => {
           />
         </div>
 
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={cupcakeIcon}
+            small={true}
+            title="Cupcake | Birthday Reminders"
+            description="<p>A birthday tracker to help you remember birthdays. Uses Google authentication, firebase for storage and hosting. Front end built using React.js & RSuite.</p>
+              <p>Cupcake lets you store your love one's birthdays. Once you log in, it will ask for permission to notify your device. If it has permission, it'll notify you 2 weeks before each birthday, then the day before.</p>
+            "
+            codeURL="https://github.com/ShrikeFound/birthday-reminder"
+            siteURL="https://birthday-reminder-2b6cb.web.app/"
+          />
+        </div>
+
+
+
+        <div>
+          {/* { show,close,image,title,description,codeURL,siteURL } */}
+          <PortfolioButton
+            icon={firesideIcon} 
+            title="Fireside | Chat App"
+            description="<p>A fullstack chatroom app. Users can sign in, create chat rooms, and chat in real time with others.</p>
+              <p>I took advantage of Firebase for its storage, hosting, and database. The frontend is presented using React.js and the react framework React Suite. I used Sass for styling.</p>"
+            codeURL="https://github.com/ShrikeFound/react-chat"
+            siteURL="https://firesidereactchat.com/signin"
+            bottom={true}
+          />
+        </div>
         
         <div>
           {/* { show,close,image,title,description,codeURL,siteURL } */}
@@ -107,18 +125,7 @@ const Work = () => {
           />
         </div>
 
-        <div>
-          {/* { show,close,image,title,description,codeURL,siteURL } */}
-          <PortfolioButton
-            icon={cupcakeIcon}
-            small={true}
-            title="Cupcake | Birthday Tracker"
-            description="<p>A birthday tracker to help you remember birthdays. Uses Google authentication, firebase for storage and hosting. Front end built using React.js</p>"
-            codeURL="https://github.com/ShrikeFound/birthday-reminder"
-            siteURL="https://birthday-reminder-2b6cb.web.app/"
-            bottom={true}
-          />
-        </div>
+        
         
 
 
