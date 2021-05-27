@@ -1,7 +1,7 @@
 import React from 'react'
 
 import irisIcon from '../images/iris_icon.svg'
-import cupcakeIcon from '../images/cupcake_icon.svg'
+import cupcakeIcon from '../images/spray_icon.svg'
 import firesideIcon from '../images/fireside_icon.svg'
 import hiveIcon from '../images/hive_icon.svg'
 import shieldIcon from '../images/shield_icon.svg'
@@ -88,12 +88,12 @@ const Work = () => {
           <PortfolioButton
             icon={cupcakeIcon}
             small={true}
-            title="Cupcake | Birthday Reminders"
-            description="<p>A birthday tracker to help you remember birthdays. Uses Google authentication, firebase for storage and hosting. Front end built using React.js & RSuite.</p>
-              <p>Cupcake lets you store your love one's birthdays. Once you log in, it will ask for permission to notify your device. If it has permission, it'll notify you 2 weeks before each birthday, then the day before.</p>
+            title="Dot | Artist Studio Website"
+            description="<p>A multi-page portfolio website for a mural artist collective studio (not a real studio!)</p>
+              <p>Built with React and Next.js</p>
             "
-            codeURL="https://github.com/ShrikeFound/birthday-reminder"
-            siteURL="https://cupcakebirthdays.app"
+            codeURL="https://github.com/ShrikeFound/studio-site"
+            siteURL="https://studio-site.vercel.app/"
           />
         </div>
 
